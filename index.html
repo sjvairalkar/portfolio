@@ -9,7 +9,7 @@
     <header style="display:flex;justify-content:space-between;align-items:center;padding:16px 40px;background:#0f172a;color:#f1f5f9;font-family:'Segoe UI',Arial,sans-serif;position:sticky;top:0;z-index:100;box-shadow:0 1px 6px rgba(0,0,0,0.15);">
   
   <a href="#home" aria-label="John Doe - Fullstack Developer Portfolio Home" style="font-size:20px;font-weight:700;color:#f1f5f9;text-decoration:none;letter-spacing:0.5px;">
-    John Doe<span style="color:#38bdf8;">.dev</span>
+    Sojal Vairalkar<span style="color:#38bdf8;">.dev</span>
   </a>
 
   <nav aria-label="Main navigation">
@@ -21,10 +21,69 @@
     </ul>
   </nav>
 
-  <a href="/resume.pdf" download style="background:#38bdf8;color:#0f172a;padding:8px 18px;border-radius:6px;font-weight:600;font-size:14px;text-decoration:none;">
+  <a href="/Sojal_Vairalkar.pdf" download style="background:#38bdf8;color:#0f172a;padding:8px 18px;border-radius:6px;font-weight:600;font-size:14px;text-decoration:none;">
     Resume
   </a>
 
 </header>
+
+<footer style="background:#0f172a;color:#f1f5f9;font-family:'Segoe UI',Arial,sans-serif;padding:50px 40px 20px;">
+
+  <div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:40px;max-width:1100px;margin:0 auto;">
+
+    <!-- Brand -->
+    <div style="max-width:280px;">
+      <h2 style="font-size:20px;margin:0 0 10px;color:#38bdf8;">John Doe<span style="color:#f1f5f9;">.dev</span></h2>
+      <p style="font-size:14px;color:#94a3b8;line-height:1.6;margin:0;">
+        Fullstack Developer passionate about building clean, scalable, and user-friendly web applications.
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div>
+      <h3 style="font-size:15px;margin:0 0 14px;color:#f1f5f9;">Quick Links</h3>
+      <ul style="list-style:none;padding:0;margin:0;font-size:14px;color:#94a3b8;line-height:2;">
+        <li><a href="#about" style="color:#94a3b8;text-decoration:none;">About</a></li>
+        <li><a href="#skills" style="color:#94a3b8;text-decoration:none;">Skills</a></li>
+        <li><a href="#projects" style="color:#94a3b8;text-decoration:none;">Projects</a></li>
+        <li><a href="#contact" style="color:#94a3b8;text-decoration:none;">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Social -->
+    <div>
+      <h3 style="font-size:15px;margin:0 0 14px;color:#f1f5f9;">Connect</h3>
+      <ul style="list-style:none;padding:0;margin:0;font-size:14px;color:#94a3b8;line-height:2;">
+        <li><a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" style="color:#94a3b8;text-decoration:none;">GitHub</a></li>
+        <li><a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" style="color:#94a3b8;text-decoration:none;">LinkedIn</a></li>
+        <li><a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer" style="color:#94a3b8;text-decoration:none;">Twitter</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Form -->
+    <div style="max-width:280px;width:100%;">
+      <h3 style="font-size:15px;margin:0 0 14px;color:#f1f5f9;">Get In Touch</h3>
+      <form onsubmit="event.preventDefault(); var email=document.getElementById('footerEmail').value; if(email){ window.location.href='mailto:hello@johndoe.dev?from=' + encodeURIComponent(email) + '&subject=' + encodeURIComponent('Portfolio Contact from ' + email); }">
+        <input type="email" id="footerEmail" required placeholder="Your email address"
+          style="width:100%;padding:10px 12px;border-radius:6px;border:1px solid #334155;background:#1e293b;color:#f1f5f9;font-size:14px;box-sizing:border-box;margin-bottom:10px;outline:none;">
+        <button type="submit"
+          style="width:100%;padding:10px 12px;background:#38bdf8;color:#0f172a;font-weight:600;font-size:14px;border:none;border-radius:6px;cursor:pointer;">
+          Send Message
+        </button>
+      </form>
+    </div>
+
+  </div>
+
+  <!-- Bottom bar -->
+  <div style="border-top:1px solid #1e293b;margin-top:40px;padding-top:18px;text-align:center;font-size:13px;color:#64748b;">
+    &copy; <span id="year"></span> John Doe. All rights reserved.
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</footer>
 </body>
 </html>
